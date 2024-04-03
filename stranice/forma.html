@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popunjavanje rezervacije</title>
+    <link
+      rel="icon"
+      type="slike/LJMwAOh9Tb97VbOxBdc9vWZsXxyN7LK9JjrRvLJL"
+      href="../slike/LJMwAOh9Tb97VbOxBdc9vWZsXxyN7LK9JjrRvLJL.jpeg"
+    />
+  </head>
+  <body>
+    <img
+      src="../slike/sheraton-full-lockup-1.png"
+      alt="sheraton logo"
+      height="150"
+    />
+    <h1>Hotel Sheraton: Rezervisite vas boravak</h1>
+    <ol>
+      <a href="../index.html">Pocetna</a>
+      <a href="../stranice/O nama.html">O nama</a>
+      <a href="../stranice/kontakt.html">Kontakt</a>
+      <a href="../stranice/rezervacija.html">Rezervacija</a>
+      <a href="../stranice/galerija.html">Galerija</a>
+    </ol>
+    <hr />
+    <form action="REZERVACIJA">
+      <label for="name"><b>Ime:</b></label> <br />
+      <input type="text" placeholder="Unesite vase ime." /><br />
+      <label for="prezime"><b>Prezime:</b></label> <br />
+      <input type="text" placeholder="Unesite vase prezime." /> <br />
+      <label for="name"><b>Email:</b></label> <br />
+      <input type="email" placeholder="Unesite vas email." /><br />
+      <label for="tel"><b>Telefon:</b></label> <br />
+      <input
+        type="tel"
+        name="telefon"
+        id="telefon"
+        placeholder="Unesite broj telefona."
+      />
+      <br />
+      <label for="godine"><b>Godine:</b></label> <br />
+      <input type="number" placeholder="Unesite vase godine." /><br />
+      <label for="pol"><b>Pol:</b></label> <br />
+      <select name="pol" id="">
+        <option value="" disabled selected>Izaberi pol</option>
+        <option value="Muski">Muski</option>
+        <option value="Zenski">Zenski</option>
+      </select>
+      <br />
+      <label for="ljubimac"><b>Ljubimac:</b></label> <br />
+      <input type="radio" name="ljubimac" id="ljubimac" /> Da <br />
+      <input type="radio" name="ljubimac" id="ljubimac" checked /> Ne
+      <br />
+      <label for="posetioci"><b>Broj kreveta:</b></label> <br />
+      <input type="checkbox" name="brpos" id="brpos" /> 1 <br />
+      <input type="checkbox" name="brpos" id="brpos" /> 2 <br />
+      <input type="checkbox" name="brpos" id="brpos" /> 3 <br />
+      <label for="checkin"><b>Check in:</b></label> <br />
+      <input type="date" name="ci" id="ci" />
+      <br />
+      <label for="co"><b>Check out:</b></label
+      ><br />
+      <input type="date" name="co" id="co" /> <br />
+      <label for="porukazahotel"><b>Poruka za hotel:</b></label> <br />
+      <textarea
+        name="poruka"
+        id="poruka"
+        cols="50"
+        rows="15"
+        placeholder="Ostavite poruku hotelu."
+      ></textarea>
+      <br />
+      <button type="reset"><b>Zavrsi rezervaciju</b></button>
+    </form>
+  </body>
+</html>
